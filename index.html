@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>SHAWNDADDY</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Shawn Blower">
-  <meta name="description" content="Personal online playground.">
+	<title>SHAWNDADDY</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Shawn Blower">
+	<meta name="description" content="Personal online playground.">
+	<style type="text/css">
+		body {
+			animation-name: backgroundColorPalette;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: linear;
+			padding: 1rem;
+		}
+		
+		@keyframes backgroundColorPalette {
+			0% { background: #ee6055; }
+			25% { background: #60d394; }
+			50% {	background: #aaf683; }
+			75% { background: #ffd97d; }
+			100% { background: #ff9b85;	}
+		}
+
+		#logo {
+			display: block;
+			margin: 0 auto 1rem auto;
+			padding: .25rem;
+			width: 100%;
+		}
+
+		.lightwidget__posts img {
+			background: #ffffff;
+			border: .25rem solid #000000;
+			padding: .25rem;
+		}
+	</style>
 </head>
 <body>
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+	<img id="logo" src="i/shawndaddy.svg" />
+		<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
 
-    <iframe src="https://cdn.lightwidget.com/widgets/e24f24bf6610536598bdf0b9cfefad6c.html"
-            scrolling="no"
-            allowtransparency="true"
-            class="lightwidget-widget"
-            style="width:100%;border:0;overflow:hidden;">
-    </iframe>
+		<iframe src="https://cdn.lightwidget.com/widgets/e24f24bf6610536598bdf0b9cfefad6c.html"
+						scrolling="no"
+						allowtransparency="true"
+						class="lightwidget-widget"
+						style="width:100%;border:0;overflow:hidden;">
+		</iframe>
 </body>
 </html>
